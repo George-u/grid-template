@@ -169,21 +169,22 @@ input:focus {
     display: grid;
     justify-content: flex-end;
     grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
-    margin: 0 -20px 0;
+    margin: 0 -10px 0 0;
     padding: 0;
     list-style: none;
     gap: 20px;
 }
 
+
+/* .header-navbar__item {
+    margin-left: 20px !important;
+} */
+
 .header-navbar__link {
-    padding-left: 10px;
+    padding: 20px 10px;
     display: block;
     font-size: 1.125rem;
     font-family: "Roboto", sans-serif;
-}
-
-.header-navbar__item {
-    margin-left: 20px;
 }
 
 .header-navbar__hamburger {
@@ -320,6 +321,7 @@ input:focus {
     inset: 0;
     margin: 0;
     font-size: 1.25rem;
+    letter-spacing: 0.1em;
 }
 
 .skill-item__link {
