@@ -466,18 +466,12 @@ input:focus {
     grid-template-columns: repeat(3, 1fr);
 }
 
-
-}
-.form-field {}
 .form-field__input {
     display: block;
     width: 100%;
     height: 60px;
     padding-right: 30px;
     padding-left: 30px;
-    border-color 0.5s;
-    border-color 0.5s;
-    transition: background-color 0.5s, border-color 0.5s;
     letter-spacing: 0.15em;
     color: #ffffff;
     border: 2px solid rgba(255, 255, 255, 0);
@@ -485,6 +479,7 @@ input:focus {
     background-color: rgba(255, 255, 255, 0.05);
     font-size: 1.125rem;
 }
+
 .form .btn--primary {
     width: 100%;
     color: #ffffff;
@@ -492,12 +487,14 @@ input:focus {
     border-bottom-color: rgba(255, 255, 255, 0.2);
     background-color: rgba(255, 255, 255, 0.1);
 }
+
 .form .btn--primary:hover,
 .form .btn--primary:focus {
     cursor: pointer;
     border-color: #ffffff;
     background-color: #d66926;
 }
+
 .form-field__input:hover,
 .form-field__input:focus {
     border-color: rgba(255, 255, 255, 0.15);
@@ -505,12 +502,17 @@ input:focus {
     background-color: rgba(255, 255, 255, 0.15);
 }
 
+
 /* Custom styles for post section */
+
 .post-item:hover {
     background-color: #d8d8d8;
 }
+
 .posts {}
+
 .posts__container {}
+
 .posts__grid {
     display: grid;
     padding-bottom: 20px;
@@ -518,6 +520,7 @@ input:focus {
     grid-template-areas: "p1 p1 p2 p3" "p4 p5 p6 p6";
     grid-template-columns: repeat(4, 1fr);
 }
+
 .post-item {
     position: relative;
     overflow: hidden;
@@ -529,12 +532,15 @@ input:focus {
     transition-timing-function: ease;
     transition-delay: 0s;
 }
+
 .post-item:hover {
     background-color: #d8d8d8;
 }
+
 .post-item__link {
     transition: color 0.5s;
 }
+
 .post-item__image {
     display: flex;
     overflow: hidden;
@@ -543,11 +549,13 @@ input:focus {
     background-color: #2d3651;
     transition: 0.5s transform;
 }
+
 .post-item__image img {
     width: 100%;
     transition: transform 0.5s;
     object-fit: cover;
 }
+
 .post-item__caption h3 {
     text-align: center;
     transition: color 0.5s;
@@ -556,23 +564,25 @@ input:focus {
     transition-timing-function: ease;
     transition-delay: 0s;
 }
+
 .post-item__caption {
     display: grid;
     align-content: center;
     padding: 20px;
     text-align: center;
 }
+
 .post-item:hover .post-item__image img {
     transform: scale(1.1);
     background-color: #5f5c5c;
 }
+
 .post-item__image img {
     width: 100%;
     transition: transform 0.5s;
     object-fit: cover;
 }
 
-}
 .post-item__caption p {
     text-align: center;
     transition-property: color;
@@ -580,10 +590,12 @@ input:focus {
     transition-timing-function: ease;
     transition-delay: 0s;
 }
+
 .posts h2,
 .about h2 {
     margin-top: 0;
 }
+
 .post-item:nth-of-type(1) {
     grid-area: p1;
     grid-row-start: p1;
@@ -591,12 +603,15 @@ input:focus {
     grid-row-end: p1;
     grid-column-end: p1;
 }
+
 .post-item:nth-of-type(2) {
     grid-area: p2;
 }
+
 .post-item:nth-of-type(3) {
     grid-area: p3;
 }
+
 .post-item:nth-of-type(4) {
     grid-area: p4;
     grid-row-start: p4;
@@ -604,20 +619,26 @@ input:focus {
     grid-row-end: p4;
     grid-column-end: p4;
 }
+
 .post-item:nth-of-type(5) {
     grid-area: p5;
 }
+
 .post-item:nth-of-type(6) {
     grid-area: p6;
 }
 
+
 /*Footer custom styles */
+
 .footer {
     padding: 50px 20px 70px;
     text-align: center;
     background-color: #2d3651;
 }
+
 .footer__container {}
+
 .footer__social {
     position: relative;
     display: grid;
@@ -625,6 +646,7 @@ input:focus {
     margin-bottom: 40px;
     grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
 }
+
 .footer__social::after {
     position: absolute;
     bottom: -20px;
@@ -634,24 +656,31 @@ input:focus {
     content: "";
     background-color: rgba(255, 255, 255, 0.1);
 }
+
 .fa-facebook-square::before {
     content: "\f082";
 }
+
 .fa-google-plus-square::before {
     content: "\f0d4";
 }
+
 .fa-twitter-square::before {
     content: "\f081";
 }
+
 .fa-pinterest-square::before {
-    content:"\f0d3";
+    content: "\f0d3";
 }
+
 .fab fa-flickr::before {
     content: "\f16e";
 }
+
 .footer__social .fab {
     font-size: 36px;
 }
+
 .footer__social a {
     display: block;
     padding: 10px;
@@ -660,29 +689,40 @@ input:focus {
     transition-timing-function: ease;
     transition-delay: 0s;
 }
+
 .footer__copyright span:nth-of-type(1) {
     margin-right: -0.5em;
     letter-spacing: 0.33em;
     font-weight: 100;
     color: #e5e5e5;
 }
+
 .footer__copyright span:nth-of-type(2) {
     letter-spacing: 0.05em;
     color: #e5e5e5;
     font-weight: 700;
 }
+
 .footer__social a:hover,
 .footer__social a:focus {
     color: #d66926;
 }
+
 .facebook__icon {}
+
 .googleplus__icon {}
+
 .twitter__icon {}
+
 .pinterest__icon {}
+
 .flickr__icon {}
+
 .footer__copyright {}
 
+
 /* media css  */
+
 @media (min-width: 992px) {
     h2 {
         margin-bottom: 3rem;
@@ -690,22 +730,27 @@ input:focus {
     }
 }
 
+
 /* Custom styles for media  */
+
 @media (min-width: 768px) {
     h1 {
         font-size: 2.5rem;
     }
 }
+
 @media (min-width: 992px) {
     h1 {
         font-size: 3.75rem;
     }
 }
+
 @media (max-width: 767px) {
     h1 {
         font-size: 1.875rem;
     }
 }
+
 @media (min-width: 992px) {
     .posts,
     .about {
@@ -713,6 +758,7 @@ input:focus {
         padding-bottom: 100px;
     }
 }
+
 @media (max-width: 767.8px) {
     .posts,
     .about {
@@ -720,6 +766,7 @@ input:focus {
         padding-bottom: 60px;
     }
 }
+
 .footer__container,
 .posts__container,
 .form__container,
@@ -731,11 +778,13 @@ input:focus {
     padding-right: 20px;
     padding-left: 20px;
 }
+
 @media (max-width: 767.8px) {
     .header-navbar__btn {
         display: block;
     }
 }
+
 .header-navbar__btn {
     position: relative;
     width: 30px;
@@ -749,6 +798,7 @@ input:focus {
     -ms-transform: rotate(0deg);
     transform: rotate( 0deg);
 }
+
 @media (min-width: 768px) {
     .header-navbar__list {
         display: grid;
@@ -763,6 +813,7 @@ input:focus {
         grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
     }
 }
+
 @media (max-width: 767.8px) and (min-width: 576px) {
     h2 {
         margin-bottom: 2.25rem;
