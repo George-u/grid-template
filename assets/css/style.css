@@ -8,7 +8,6 @@
 html {
     font-size: 16px;
     font-family: "Roboto", sans-serif;
-    overflow-y: scroll;
     letter-spacing: 0.1em;
     color: #637588;
     line-height: 1.15;
@@ -464,7 +463,7 @@ input:focus {
 
 .form__container {
     display: grid;
-    column-gap: 7%;
+    column-gap: 1.7%;
     grid-template-columns: repeat(3, 1fr);
 }
 
@@ -568,10 +567,9 @@ input:focus {
 }
 
 .post-item__caption {
+    padding: 20px;
     display: grid;
     align-content: center;
-    padding: 20px;
-    text-align: center;
 }
 
 .post-item:hover .post-item__image img {
@@ -696,7 +694,6 @@ input:focus {
     margin-right: -0.5em;
     letter-spacing: 0.33em;
     font-weight: 100;
-    color: #e5e5e5;
 }
 
 .footer__copyright span:nth-of-type(2) {
