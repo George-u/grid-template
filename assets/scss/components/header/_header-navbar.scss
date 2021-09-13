@@ -1,0 +1,140 @@
+.header-navbar {
+    &__btn {
+      width: 30px;
+      height: 22.5px;
+      position: relative;
+      margin: 25px 0 25px auto;
+      transform: rotate(0deg);
+      transition: .5s ease-in-out;
+      cursor: pointer;
+  
+      @include md-min {
+        display: none;
+      }
+  
+      &-row {
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 50%;
+        background: $color-light;
+        opacity: 1;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+  
+        &:nth-child(even) {
+          left: 50%;
+          border-radius: 0 3px 3px 0;
+        }
+  
+        &:nth-child(odd) {
+          left: 0px;
+          border-radius: 3px 0 0 3px;
+        }
+  
+        &:nth-child(1),
+        &:nth-child(2) {
+          top: 0px;
+        }
+  
+        &:nth-child(3),
+        &:nth-child(4) {
+          top: 9px;
+        }
+  
+        &:nth-child(5),
+        &:nth-child(6) {
+          top: 18px;
+        }
+      }
+  
+      &--active span {
+        &:nth-child(1),
+        &:nth-child(6) {
+          transform: rotate(45deg);
+        }
+  
+        &:nth-child(2),
+        &:nth-child(5) {
+          transform: rotate(-45deg);
+        }
+  
+        &:nth-child(1) {
+          left: 2.5px;
+          top: 3.5px;
+        }
+  
+        &:nth-child(2) {
+          left: calc(50% - 2.5px);
+          top: 3.5px;
+        }
+  
+        &:nth-child(3) {
+          left: -50%;
+          opacity: 0;
+        }
+  
+        &:nth-child(4) {
+          left: 100%;
+          opacity: 0;
+        }
+  
+        &:nth-child(5) {
+          left: 2.5px;
+          top: 14.5px;
+        }
+  
+        &:nth-child(6) {
+          left: calc(50% - 2.5px);
+          top: 14.5px;
+        }
+      }
+    }
+  
+    &__list {
+      @include md-min {
+        display: grid;
+        justify-content: end;
+  
+        gap: $gap;
+        grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
+        @include unlist(0 (-$gap / 2) 0 0);
+      }
+  
+      @include md {
+        display: none;
+        @include unlist(0, 10px 0);
+        position: absolute;
+        right: $gap;
+        top: 100%;
+        background-color: rgba($color-gray-dark, 0.95);
+        text-align: right;
+        @include box-shadow;
+      }
+  
+      &--active {
+        display: block !important;
+      }
+    }
+  
+    &__link {
+      display: block;
+  
+      @include md-min {
+        padding: $gap ($gap / 2);
+      }
+  
+      @include md {
+        padding: $gap ($gap * 2);
+      }
+  
+      transition: color 0.5s;
+  
+      font-size: 1.125rem;
+  
+      &:hover,
+      &:focus {
+        color: $color-accent;
+      }
+    }
+  }
