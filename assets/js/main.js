@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('.header-navbar__hamburger').on('click', function() {
-        $(this).toggleClass('active');
-        $('.header-navbar__list').toggleClass('active');
+        $(this).toggleClass('header-navbar__hamburger--active');
+        $('.header-navbar__list').toggleClass('header-navbar__list--active');
     });
 });
